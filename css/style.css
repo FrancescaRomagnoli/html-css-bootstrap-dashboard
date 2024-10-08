@@ -1,3 +1,7 @@
+:root {
+  /* --bs-emphasis-color-rgb: rgb(77, 145, 255); */
+}
+
 .navbar-brand > img {
   height: 60px;
 }
