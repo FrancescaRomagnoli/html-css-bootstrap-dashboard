@@ -27,12 +27,13 @@
   <body>
     <!-- header -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-dark">
+      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
           <!-- logo -->
           <a class="navbar-brand" href="#"
             ><img src="./img/duck.png" alt="duck logo"
           /></a>
+          <!-- navbar button -->
           <button
             class="navbar-toggler"
             type="button"
@@ -44,6 +45,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <!-- navbar items -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -64,7 +66,7 @@
             </ul>
 
             <!-- searchbar -->
-            <form class="d-flex" role="search">
+            <form class="d-flex" role="search" data-bs-theme="light">
               <input
                 class="form-control me-2"
                 type="search"
@@ -87,9 +89,11 @@
           <div class="col-12 col-lg-8">
             <header class="d-flex justify-content-between mb-3">
               <h1 class="fs-2">Catalogo Libri</h1>
-              <button type="button" class="btn btn-primary">
-                Aggiungi Libro
-              </button>
+              <a href="./new-book.html" target="_blank">
+                <button type="button" class="btn btn-primary">
+                  Aggiungi Libro
+                </button>
+              </a>
             </header>
             <!-- table -->
             <table class="table table-striped">
@@ -111,16 +115,18 @@
                   <td>
                     <span class="badge bg-success">Disponibile</span>
                   </td>
-                  <td class="d-flex gap-2 h-100">
-                    <div>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-pencil"></i>
-                      </button>
-                    </div>
-                    <div>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-trash-can"></i>
-                      </button>
+                  <td>
+                    <div class="d-flex gap-2 h-100">
+                      <div>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-solid fa-pencil"></i>
+                        </button>
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -131,16 +137,18 @@
                   <td>
                     <span class="badge bg-success">Disponibile</span>
                   </td>
-                  <td class="d-flex gap-2 h-100">
-                    <div>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-pencil"></i>
-                      </button>
-                    </div>
-                    <div>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-trash-can"></i>
-                      </button>
+                  <td>
+                    <div class="d-flex gap-2 h-100">
+                      <div>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-solid fa-pencil"></i>
+                        </button>
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -151,16 +159,18 @@
                   <td>
                     <span class="badge bg-warning">In prestito</span>
                   </td>
-                  <td class="d-flex gap-2 h-100">
-                    <div>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-pencil"></i>
-                      </button>
-                    </div>
-                    <div>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-trash-can"></i>
-                      </button>
+                  <td>
+                    <div class="d-flex gap-2 h-100">
+                      <div>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-solid fa-pencil"></i>
+                        </button>
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -171,16 +181,18 @@
                   <td>
                     <span class="badge bg-success">Disponibile</span>
                   </td>
-                  <td class="d-flex gap-2 h-100">
-                    <div>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-pencil"></i>
-                      </button>
-                    </div>
-                    <div>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-trash-can"></i>
-                      </button>
+                  <td>
+                    <div class="d-flex gap-2 h-100">
+                      <div>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-solid fa-pencil"></i>
+                        </button>
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -191,16 +203,18 @@
                   <td>
                     <span class="badge bg-danger">Non disponbile</span>
                   </td>
-                  <td class="d-flex gap-2 h-100">
-                    <div>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-pencil"></i>
-                      </button>
-                    </div>
-                    <div>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-trash-can"></i>
-                      </button>
+                  <td>
+                    <div class="d-flex gap-2 h-100">
+                      <div>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-solid fa-pencil"></i>
+                        </button>
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -211,16 +225,18 @@
                   <td>
                     <span class="badge bg-success">Disponibile</span>
                   </td>
-                  <td class="d-flex gap-2 h-100">
-                    <div>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-pencil"></i>
-                      </button>
-                    </div>
-                    <div>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-trash-can"></i>
-                      </button>
+                  <td>
+                    <div class="d-flex gap-2 h-100">
+                      <div>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-solid fa-pencil"></i>
+                        </button>
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -231,16 +247,18 @@
                   <td>
                     <span class="badge bg-warning">In prestito</span>
                   </td>
-                  <td class="d-flex gap-2 h-100">
-                    <div>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-pencil"></i>
-                      </button>
-                    </div>
-                    <div>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-trash-can"></i>
-                      </button>
+                  <td>
+                    <div class="d-flex gap-2 h-100">
+                      <div>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-solid fa-pencil"></i>
+                        </button>
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -251,16 +269,18 @@
                   <td>
                     <span class="badge bg-success">Disponibile</span>
                   </td>
-                  <td class="d-flex gap-2 h-100">
-                    <div>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-pencil"></i>
-                      </button>
-                    </div>
-                    <div>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-trash-can"></i>
-                      </button>
+                  <td>
+                    <div class="d-flex gap-2 h-100">
+                      <div>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-solid fa-pencil"></i>
+                        </button>
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -271,16 +291,18 @@
                   <td>
                     <span class="badge bg-danger">Non disponbibile</span>
                   </td>
-                  <td class="d-flex gap-2 h-100">
-                    <div>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-pencil"></i>
-                      </button>
-                    </div>
-                    <div>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-trash-can"></i>
-                      </button>
+                  <td>
+                    <div class="d-flex gap-2 h-100">
+                      <div>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-solid fa-pencil"></i>
+                        </button>
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -293,16 +315,18 @@
                   <td>
                     <span class="badge bg-warning">In prestito</span>
                   </td>
-                  <td class="d-flex gap-2 h-100">
-                    <div>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-pencil"></i>
-                      </button>
-                    </div>
-                    <div>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-trash-can"></i>
-                      </button>
+                  <td>
+                    <div class="d-flex gap-2 h-100">
+                      <div>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-solid fa-pencil"></i>
+                        </button>
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -313,16 +337,18 @@
                   <td>
                     <span class="badge bg-success">Disponibile</span>
                   </td>
-                  <td class="d-flex gap-2 h-100">
-                    <div>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-pencil"></i>
-                      </button>
-                    </div>
-                    <div>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-trash-can"></i>
-                      </button>
+                  <td>
+                    <div class="d-flex gap-2 h-100">
+                      <div>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-solid fa-pencil"></i>
+                        </button>
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -333,16 +359,18 @@
                   <td>
                     <span class="badge bg-success">Disponibile</span>
                   </td>
-                  <td class="d-flex gap-2 h-100">
-                    <div>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-pencil"></i>
-                      </button>
-                    </div>
-                    <div>
-                      <button type="button" class="btn btn-outline-secondary">
-                        <i class="fa-solid fa-trash-can"></i>
-                      </button>
+                  <td>
+                    <div class="d-flex gap-2 h-100">
+                      <div>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-solid fa-pencil"></i>
+                        </button>
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-outline-secondary">
+                          <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -418,12 +446,7 @@
                       class="accordion-collapse collapse"
                       data-bs-parent="#accordionFlushExample"
                     >
-                      <div class="accordion-body">
-                        Placeholder content for this accordion, which is
-                        intended to demonstrate the
-                        <code>.accordion-flush</code> class. This is the first
-                        item's accordion body.
-                      </div>
+                      <div class="accordion-body">Placeholder content</div>
                     </div>
                   </div>
                   <div class="accordion-item">
@@ -444,13 +467,7 @@
                       class="accordion-collapse collapse"
                       data-bs-parent="#accordionFlushExample"
                     >
-                      <div class="accordion-body">
-                        Placeholder content for this accordion, which is
-                        intended to demonstrate the
-                        <code>.accordion-flush</code> class. This is the second
-                        item's accordion body. Let's imagine this being filled
-                        with some actual content.
-                      </div>
+                      <div class="accordion-body">Placeholder content</div>
                     </div>
                   </div>
                   <div class="accordion-item">
