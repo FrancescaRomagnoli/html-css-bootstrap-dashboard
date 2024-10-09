@@ -30,7 +30,7 @@
       <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
           <!-- logo -->
-          <a class="navbar-brand" href="#"
+          <a class="navbar-brand" href="./index.html"
             ><img src="./img/duck.png" alt="duck logo"
           /></a>
           <!-- navbar button -->
@@ -86,8 +86,121 @@
     <div class="container">
       <header class="d-flex justify-content-between mt-4">
         <h1 class="fs-2">Nuovo Libro</h1>
-        <button type="button" class="btn btn-primary">Aggiungi Libro</button>
       </header>
+      <!-- form -->
+      <div class="container">
+        <!-- row 1 -->
+        <div class="row">
+          <!-- nome autore -->
+          <div class="col-6 my-2">
+            <label for="authorName" class="form-label">Nome Autore</label>
+            <input
+              type="text"
+              class="form-control"
+              id="authorName"
+              placeholder="Inserisci il nome dell'autore"
+            />
+          </div>
+          <div class="col-6 my-2">
+            <label for="authorLastName" class="form-label"
+              >Cognome Autore</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="authorLastName"
+              placeholder="Inserisci il nome dell'autore"
+            />
+          </div>
+          <!-- titolo -->
+          <div class="col-12 my-2">
+            <label for="title" class="form-label">Titolo</label>
+            <input
+              type="text"
+              class="form-control"
+              id="title"
+              placeholder="Inserisci il nome dell'autore"
+            />
+            <div id="authorNamehelp" class="form-text">
+              Titolo versione italiana
+            </div>
+          </div>
+        </div>
+        <!-- row 2 -->
+        <div class="row row-cols-lg-3">
+          <!-- genere -->
+          <div class="col-12 my-2">
+            <label for="genre" class="form-label">Genere</label>
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              id="genre"
+              required
+            >
+              <option selected>Scegli il genere</option>
+              <option value="1">Narrativa</option>
+              <option value="2">Biografia</option>
+              <option value="3">Fantascienza</option>
+            </select>
+          </div>
+          <!-- anno di pubblicazione -->
+          <div class="col-12 my-2">
+            <label for="releaseYear" class="form-label"
+              >Anno di Pubblicazione</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="releaseYear"
+              placeholder="Inserisci l'anno"
+            />
+          </div>
+          <!-- ISBN -->
+          <div class="col-12 my-2">
+            <label for="isbn" class="form-label">ISBN#</label>
+            <input
+              type="text"
+              class="form-control"
+              id="isbn"
+              placeholder="Inserisci il codice ISBN#"
+            />
+          </div>
+        </div>
+        <!-- line -->
+        <div class="mt-4 mb-3">
+          <hr class="text-muted" />
+        </div>
+        <!-- row 3 -->
+        <div class="row">
+          <!-- note -->
+          <div class="col-12 my-2">
+            <label for="note" class="form-label">Note</label>
+            <textarea
+              placeholder="Inserisci eventuali note sul libro"
+              class="form-control"
+              id="note"
+            ></textarea>
+          </div>
+          <!-- digital checkbox -->
+          <div class="col-12 my-2">
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="digitalCopy"
+              />
+              <label class="form-check-label" for="digitalCopy"
+                >Disponibile anche in digitale</label
+              >
+            </div>
+          </div>
+          <div class="col-12">
+            <button input="submit" class="btn btn-primary">
+              Aggiungi Libro
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- bootstrap js -->
